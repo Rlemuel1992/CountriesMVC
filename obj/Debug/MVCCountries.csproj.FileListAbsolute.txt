@@ -1,0 +1,7 @@
+C:\Users\Ronad\source\repos\MVCCountries\MVCCountries\bin\Debug\MVCCountries.exe.config
+C:\Users\Ronad\source\repos\MVCCountries\MVCCountries\bin\Debug\MVCCountries.exe
+C:\Users\Ronad\source\repos\MVCCountries\MVCCountries\bin\Debug\MVCCountries.pdb
+C:\Users\Ronad\source\repos\MVCCountries\MVCCountries\obj\Debug\MVCCountries.csproj.CoreCompileInputs.cache
+C:\Users\Ronad\source\repos\MVCCountries\MVCCountries\obj\Debug\MVCCountries.exe
+C:\Users\Ronad\source\repos\MVCCountries\MVCCountries\obj\Debug\MVCCountries.pdb
+C:\Users\Ronad\source\repos\MVCCountries\MVCCountries\obj\Debug\MVCCountries.csprojAssemblyReference.cache
