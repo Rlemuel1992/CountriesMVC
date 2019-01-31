@@ -49,6 +49,7 @@
     <Compile Include="CountryDetails.cs" />
     <Compile Include="CountryViewer.cs" />
     <Compile Include="NorthAmericanDB.cs" />
+    <Compile Include="PlayAgain.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

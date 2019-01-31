@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace MVCCountries
 {
+	//The controller for the entire project minus the PlayAgain class.
 	class CountryController
 	{
 		public void CountryDetails(Country c)
@@ -29,15 +30,15 @@ namespace MVCCountries
 					while (AmericaLoop == true)
 					{
 						NorthAmericanDB nadb = new NorthAmericanDB();
-					countries = nadb.Countries;
-					int num = 1;
-					foreach (Country c in countries)
-					{
-						Console.WriteLine(num + ". " + c.Name);
-						num++;
-					}
-					
-						Console.WriteLine("Pick a country in America.");
+						countries = nadb.Countries;
+						int num = 1;
+						foreach (Country c in countries)
+						{
+							Console.WriteLine(num + ". " + c.Name);
+							num++;
+						}
+
+						q.PickAmerica();
 						int.TryParse(Console.ReadLine(), out int index);
 						if (index > 0 && index <= 5)
 						{
@@ -56,30 +57,43 @@ namespace MVCCountries
 				}
 				else if (input == "2")
 				{
-					AsiaDB aDB = new AsiaDB();
-					countries = aDB.Countries;
-					int num = 1;
-					foreach (Country c in countries)
+					bool AsiaLoop = true;
+					while (AsiaLoop == true)
 					{
-						Console.WriteLine(num + ". " + c.Name);
-						num++;
+						AsiaDB aDB = new AsiaDB();
+						countries = aDB.Countries;
+						int num = 1;
+						foreach (Country c in countries)
+						{
+							Console.WriteLine(num + ". " + c.Name);
+							num++;
+						}
+						q.PickAsia();
+						int.TryParse(Console.ReadLine(), out int index);
+						if (index > 0 && index <= 5)
+						{
+							Country c = countries[index - 1];
+							CountryDetails(c);
+							contRun = false;
+							AsiaLoop = false;
+						}
+						else
+						{
+							q.LoopFalse();
+							AsiaLoop = true;
+							
+						}
 					}
-					Console.WriteLine("Pick a country in Asia.");
-					int.TryParse(Console.ReadLine(), out int index);
-					if (index > 0 && index <= 5)
-					{
-						Country c = countries[index - 1];
-						CountryDetails(c);
-						contRun = false;
-					}
-
 				}
+
 				else
 				{
 					q.LoopFalse();
 					contRun = true;
 				}
 			}
-		}
+			PlayAgain another = new PlayAgain();
+			PlayAgain.Again();
+		}	
 	}
 }

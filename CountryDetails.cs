@@ -8,6 +8,7 @@ namespace MVCCountries
 {
 	class CountryDetails
 	{
+		// My write line that pulls from my constructor, Country class.
 		Country Country;
 		public CountryDetails(Country Country)
 		{

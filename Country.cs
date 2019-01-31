@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace MVCCountries
 {
+	//main constructor for whole program.
 	class Country
 	{
 		public string Name;

@@ -8,7 +8,7 @@ namespace MVCCountries
 {
 	class Program
 	{
-		static void Main()
+		public static void Main()
 		{
 			
 				CountryController cc = new CountryController();

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace MVCCountries
 {
+	//My viewer for all write lines in the program.
 	class CountryViewer
 	{
 		public void ContView()
@@ -17,6 +18,19 @@ namespace MVCCountries
 		public void LoopFalse()
 		{
 			Console.WriteLine("Wrong input, try again.\n");
+		}
+		public void PickAmerica()
+		{
+			Console.WriteLine("Pick a country in America.");
+		}
+
+		public void PickAsia()
+		{
+			Console.WriteLine("Pick a country in Asia.");
+		}
+		public void AmericaCountryChoice()
+		{
+
 		}
 	}
 }
