@@ -17,14 +17,16 @@ namespace MVCCountries
 		
 		public void Display()
 		{
+			Console.WriteLine("********************");
 			Console.WriteLine("Country: " + Country.Name);
 			Console.WriteLine("Language: " + Country.Lang);
 			Console.WriteLine("Greetings: " + Country.Hello);
-			Console.WriteLine("Colors: ");
+			Console.WriteLine("*******Colors*******");
 			foreach (string color in Country.Colors)
 			{
 				Console.WriteLine(color);
 			}
+			Console.WriteLine("********************");
 		}
 	}
 }
